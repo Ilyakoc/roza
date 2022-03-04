@@ -1,0 +1,13 @@
+
+Yii Migration Tool v1.0 (based on Yii v1.1.16)
+
+Total 1 new migration to be applied:
+    m170130_042939_create_seo_table
+
+*** applying m170130_042939_create_seo_table
+    > create table seo_seo ... done (time: 0.007s)
+    > create index hash on seo_seo (hash) ... done (time: 0.010s)
+*** applied m170130_042939_create_seo_table (time: 0.023s)
+
+
+Migrated up successfully.

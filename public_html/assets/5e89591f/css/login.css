@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+.wrapper {
+    position: absolute;
+    top: 50%;
+    margin-top: -180px;
+    width: 100%;
+}
+.main {
+    background-color: #fff;
+    width: 250px;
+    margin: 0 auto;
+    padding: 35px;
+    box-shadow: #bbb 0 0 10px;
+    text-align: center;
+}
+.logo {
+    height: 25px;
+    margin: 0 0 10px;
+}
+.sitename {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.line {
+    background-color: #ccc;
+    height: 1px;
+    width: 80px;
+    margin: 0 auto 10px;
+}
+.note {
+    color: #666;
+}
+
+#login-form {
+    padding-top: 20px;
+    width: 234px;
+    margin: 0 auto;
+}
+div.form .row {
+    margin: 0 0 8px;
+    position: relative;
+}
+div.form .row label {
+    display: block;
+    position: absolute;
+    width: 205px;
+    height: 37px;
+    padding: 0 12px;
+    line-height: 37px;
+    text-align: left;
+    font-size: 18px;
+    color: #666;
+}
+div.form .row label.hidden {
+    display: none;
+}
+div.form .row input[type=text],
+div.form .row input[type=password] {
+    padding: 7px 10px;
+    width: 205px;
+    border: solid 1px #DBDBDB;
+    font-size: 18px;
+}
+div.form .row input[type=text].error,
+div.form .row input[type=password].error {
+    background-color: #FEE;
+}
+div.form .row .errorMessage {
+    font-size: 11px;
+    color: #fc0000;
+    padding-top: 3px;
+}
+div.form .enter {
+    padding-top: 10px;
+}
+.custom-submit-button {
+    display: none;
+}

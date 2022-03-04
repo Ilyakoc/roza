@@ -1,0 +1,26 @@
+.logo {
+    background: url(../images/d/logo.png) 50% 50% no-repeat;
+}
+.default-button {
+    background: url(../images/alert-overlay.png) repeat-x #eee;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: 0 1px 3px #999;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    text-shadow: 1px 1px 1px #fff;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 14px 9px;
+}
+.default-button:active {
+    position: relative;
+    top: 1px;
+}

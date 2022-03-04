@@ -1,0 +1,29 @@
+body {
+    background-color: #D9E7F2;
+}
+.main {
+    border-radius: 5px;
+}
+.logo {
+    background: url(../images/a/logo.png) 50% 0 no-repeat;
+}
+div.form .row input[type=text],
+div.form .row input[type=password] {
+    border-radius: 5px;
+}
+div.form .row input[type=submit] {
+    visibility: hidden;
+    display: block;
+    height: 1px;
+}
+.custom-submit-button {
+    display: block;
+    background: url(../images/a/send_login.png) no-repeat;
+    margin: 0 auto;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -1,0 +1,30 @@
+div.form div.error .mceIframeContainer {
+    background: #FEE;
+}
+div.form div.success .mceIframeContainer {
+    background: #E6EFC2;
+}
+/* Buttons */
+.defaultSkin span.mce_cms_form_button,
+.defaultSkin span.mce_cms_gallery_1,
+.defaultSkin span.mce_cms_gallery_2 {
+    background: url("../images/cms_buttons.png") no-repeat;
+}
+.defaultSkin span.mce_cms_form_button { background-position: -20px 0;}
+.defaultSkin span.mce_cms_gallery_1   { background-position: -40px 0;}
+.defaultSkin span.mce_cms_gallery_2   { }
+
+.defaultSkin span.mce_tablesettings {
+    background: url("../images/table.png") 50% 50% no-repeat;
+}
+.defaultSkin span.mce_cms_comments {
+    background: url("../images/comments.png") 50% 50% no-repeat;
+}
+.defaultSkin span.mce_gismap {
+    background: url(../images/2gis_map.png) 50% 50% no-repeat;
+}
+.defaultSkin .mceToolbar.Disabled {
+    display: none;
+}
+
+.image-full {}

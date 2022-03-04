@@ -1,0 +1,10 @@
+.sliders-list {
+    list-style: none;
+}
+.sliders-list li {
+    background-color: #ddd;
+    padding: 7px 10px;
+}
+.sliders-list .remove {
+    float: right;
+}

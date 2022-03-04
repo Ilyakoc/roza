@@ -1,0 +1,29 @@
+#logo {
+    background: url(../images/a/logo.png) 50% 50% no-repeat;
+}
+.default-button {
+    padding: 4px 14px 4px;
+}
+input.default-button {
+    padding: 8px 14px 9px;
+}
+.default-button span {
+    background: url(../images/a/bicons.png) no-repeat;
+    padding-left: 30px;
+    line-height: 28px;
+    height: 27px;
+}
+.create-b span {
+    background-position: 0 0;
+}
+.settings-b span {
+    background-position: 0 -27px;
+}
+.logout-b span {
+    background-position: 0 -54px;
+    /*overflow: hidden;
+    text-indent: 50px;*/
+}
+.delete-b span {
+    background-position: 0 -81px;
+}
