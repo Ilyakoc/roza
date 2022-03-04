@@ -8,9 +8,9 @@ return array(
 			'username'=>'root',
 			'password'=>'',
 		) : */array(
-   			'connectionString'=>'mysql:host=localhost;dbname=ch76435_db',
-            'username'=>'ch76435_db',
-            'password'=>'bGrRoYfs',
+   			'connectionString'=>'mysql:host=localhost;dbname=cm46029_roza',
+            'username'=>'cm46029_roza',
+            'password'=>'f8KSX9dG',
 		),
 	),
 	'commandMap'=>array(
