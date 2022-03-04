@@ -1,0 +1,132 @@
+.clearfix:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix {display:block;}
+
+/*Editor*/
+.user_info_block {
+    clear: right;
+    float: right;
+    width:230px;
+    margin: 0 0 10px 15px;
+}
+.user_info_block .text {
+    border: solid 5px #F0F0F0;
+    margin:0 auto !important;
+    padding:18px;
+    font-size:12px;
+}
+.user_info_block p,
+.user_info_block h4 {
+    margin-bottom:8px
+}
+.user_info_block p:last-child {
+    margin-bottom:0 !important;
+}
+
+/* Image gallery */
+.images-gallery {
+    margin-bottom: 10px;
+}
+#images-gallery.images-gallery ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.images-gallery li {
+    float: left;
+    width: 20%;
+    margin-right: 5px;
+}
+.images-gallery li img {
+    width: 100%;
+}
+.images-gallery .gallery-item img {
+    max-width: 200px;
+}
+.images-gallery li a {
+}
+
+.images-gallery .gallery-item {
+    float: left;
+    margin-right: 10px;
+    /*width: 33%;*/
+}
+.images-gallery .gallery-item a {
+    display: block;
+    text-align: center;
+}
+.images-gallery .clr {
+    height: 10px;
+}
+.images-gallery .page {
+    margin: 0 0 10px;
+    display: none;
+}
+.images-gallery .page.show {
+    display: block;
+}
+
+/* Image block */
+.images-block {
+    float: right;
+    padding-bottom: 30px;
+    margin-left: 10px;
+    width: 230px;
+}
+.images-block img {
+    max-width: 230px;
+}
+.images-block .image {
+    display: block;
+    text-align: center;
+}
+.images-block .hidden {
+    display: none;
+}
+.images-block .show-all-images {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*Table*/
+.content table {
+    max-width: 100%;
+    border-collapse: collapse;
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+.content table td {
+    padding: 5px 10px;
+}
+.content table tr {}
+.content table td p {}
+
+/* Table variations */
+.content table.infoTbl,
+.content table.infoTbl td {
+    border-color: #ccc;
+}
+.content table.infoTbl td {
+    border-bottom: #ccc solid 1px;
+}
+.content table.infoTbl tr:first-child {
+    background: #eee;
+    text-align: center;
+    font-weight: bold;
+}
+/* -- */
+.content table.stdTbl,
+.content table.stdTbl td {
+    border-color: #999;
+}
+
+
+
+
+.YMaps table {
+    margin: 0;
+}
+.YMaps table td {
+    padding: 0;
+}

@@ -1,0 +1,80 @@
+Примеры полей форм для раздела администрирования
+
+use common\components\helpers\HArray as A;
+
+// CheckBox
+$this->widget('\common\widgets\form\CheckboxField', A::m(compact('form', 'model'), ['attribute'=>'my_attribute'])); 
+
+// CheckBoxList
+$this->widget('\common\widgets\form\CheckboxListField', A::m(compact('form', 'model'), [
+	'attribute'=>'my_attribute',
+	'data'=>$myData
+])); 
+
+// DropDownList
+$this->widget('\common\widgets\form\DropDownListField', A::m(compact('form', 'model'), [
+	'attribute'=>'my_attribute',
+	'data'=>$myData
+])); 
+
+// пример для списка брендов
+$this->widget('\common\widgets\form\DropDownListField', A::m(compact('form', 'model'), [
+	'attribute'=>'brand_id',
+	'data'=>Brand::getListData(true),
+	'htmlOptions'=>['class'=>'form-control', 'empty'=>'Не указан']
+]));
+
+// заголовок с полем алиаса
+$this->widget('\common\widgets\form\TextField', A::m(compact('form', 'model'), ['attribute'=>'title']));
+$this->widget('\common\widgets\form\AliasField', compact('form', 'model')); 
+
+// Text 
+$this->widget('\common\widgets\form\TextField', A::m(compact('form', 'model'), ['attribute'=>'my_attribute']));
+
+// пример: цена
+$this->widget('\common\widgets\form\TextField', A::m(compact('form', 'model'), [
+	'attribute'=>'price', 
+	'unit'=>'руб.',
+	'htmlOptions'=>['class'=>'w10 inline form-control']
+]));
+
+// TinyMCE полный
+$this->widget('\common\widgets\form\TinyMceField', A::m(compact('form', 'model'), ['attribute'=>'my_attribute']));
+Параметры:
+$uploadImages=true;
+$uploadFiles=true;
+$showAccordion=true;
+
+// TinyMCE сокращенный
+$this->widget('\common\widgets\form\TinyMceField', A::m(compact('form', 'model'), [
+	'attribute'=>'my_attribute', 
+	'full'=>false
+])); 
+
+
+// TextArea
+Пример вывода поля (если необходимо отобразить только поле)
+'hideErrorTag'=>'span' - требуется, если поле в шаблоне находится внутри тэга <p>.
+
+<? $this->widget('\common\widgets\form\TextAreaField', A::m(compact('form', 'model'), ['attribute'=>'my_attribute',
+    'tag'=>false,
+    'hideLabel'=>true,
+    'hideError'=>true,
+    'hideErrorTag'=>'span',
+    'htmlOptions'=>[]
+])); ?>
+
+// DateTime (дата+время)
+'mode'=>'time', - только время, если не передавать данный параметр, то будет отображена форма дата+время (тоже что mode=datetime).
+<? $this->widget('\common\widgets\form\DateTimeField', A::m(compact('form', 'model'), [
+    'attribute'=>'my_attribute',
+    'mode'=>'time'
+])); ?>
+
+// Date (дата)
+Пример: формат даты dd/mm/yy и разрешен выбор даты от текущего дня.
+<? $this->widget('\common\widgets\form\DateField', A::m(compact('form', 'model'), [
+    'attribute'=>'my_attribute',
+    'options'=>['dateFormat'=>'dd/mm/yy', 'minDate'=>0]
+])); ?>
+

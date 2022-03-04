@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow-y: scroll;
+}
+body {
+    font: 14px Arial, sans-serif;
+}
+a {
+    color: #006699;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.js-link,
+.ajax-link {
+    text-decoration: none;
+    border-bottom: 1px dotted #006699;
+}
+.js-link:hover,
+.ajax-link:hover {
+    border-color: transparent;
+}
+
+a.dashed {
+    border-bottom: #069 1px dashed;
+    text-decoration: none;
+}
+
+.clr   {clear: both;}
+.left  {float: left;}
+.right {float: right;}
+
+.left-col {
+    float: left;
+    width: 187px;
+}
+.right-col {
+    float: right;
+    width: 680px;
+}
+
+#top-line {
+    height: 18px;
+    background: url("../images/top-line.png") repeat-x;
+}
+
+#wrapper {
+    width: 920px;
+    margin: 0 auto;
+}
+
+#header {
+    padding: 30px 0;
+}
+#logo {
+    display: block;
+    background: url(../images/logo_dishman.png) 50% 0 no-repeat;
+    height: 20px;
+    margin-bottom: 10px;
+}
+#sitename {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+#sitename a {
+    color: #000;
+    text-decoration: none;
+}
+#top-menu {
+    padding-top: 16px;
+}
+
+#main {
+    margin-bottom: 30px;
+    padding-right: 20px;
+}
+#content {
+    border: solid 5px #ECECEC;
+    padding: 20px;
+}
+
+#footer {
+    border-top: solid 1px #ECECEC;
+    padding: 20px;
+    font-size: 12px;
+}
+#footer * {
+    color: #999999;
+}
+
+#header, #footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* .site-menu */
+.site-menu {
+    list-style: none;
+}
+.site-menu li {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.site-menu li.default {
+    font-weight: bold;
+}
+.site-menu li a {
+    font-size: 0.9em;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.site-menu li:hover,
+.site-menu .ui-sortable-helper,
+.site-menu li.ui-state-highlight,
+.site-menu li.active {
+    background: url("../images/menu-item.png") no-repeat;
+}
+.site-menu .ui-state-disabled {
+    opacity: 1;
+}
+.site-menu .ui-state-disabled.last {
+    border-bottom: solid 1px #E9E9E9;
+    margin-right: 12px;
+    height: 0;
+}
+.site-menu .ui-state-disabled:hover {
+    /*background: none;*/
+}
+.site-menu .ui-state-disabled a {
+    color: #999;
+    font-size: 12px;
+}
+.site-menu li.ui-sortable-helper {
+    background-position: 0 -76px;
+    height: 38px !important;
+    width: 195px !important;
+}
+.site-menu li.ui-state-highlight {
+    background-position: 0 -38px;
+}
+
+/* settings */
+#settings-form .row {
+    margin-bottom: 25px;
+}

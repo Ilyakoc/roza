@@ -1,0 +1,88 @@
+Пример использования фильтра для модели, наследуемой от \common\components\base\ActiveRecord
+
+ВАЖНО!
+Параметры фильтра должны передаваться в перменной $params[TagRule::$paramName]
+Пример создания ссылки:
+<?=CHtml::link('НОВИНКИ И СПЕЦПРЕДЛОЖЕНИЯ', ['shop/filter', 'filter'=>['marker'=>['new', 'specoffer']]])?>
+
+---------------------------------------
+На примере фильтра каталога по маркерам
+---------------------------------------
+
+1) Добавить правило в начало /protected/config/urls.php
+array(
+    'class'=>'\common\components\rules\TagRule',
+    'controllerName'=>'shop',
+    'baseUrl'=>'catalog',
+    'moduleName'=>'shop',
+    'paramName'=>'filter',
+    'paramDelimiter'=>';'
+),
+или
+array(
+	'class'=>'\common\components\rules\TagRule',
+	'moduleName'=>'shop',
+	'controllerName'=>'shop',
+	'baseUrl'=>'catalog',
+	'tagName'=>'sale',
+	'attribute'=>'marker',
+	'attributeValue'=>'sale'
+),
+
+2) Добавить обработчик фильтра по умолчанию в модель Product
+
+public function filterDefaultHandler($model, $name, $value, $columnOperator)
+{
+    $criteria=new \CDbCriteria();
+    
+    switch($name) {
+        case 'marker':
+            if(!is_array($value)) $value=[$value];
+            $criteria->addColumnCondition(array_fill_keys(array_intersect($value, ['sale', 'new', 'hit']), 1), $columnOperator);
+            break;
+    }
+    
+    return $criteria; 
+}
+ 
+3) Добавить действие в контроллер ShopController
+
+use common\components\helpers\HArray as A;
+
+    /**
+     * Страница фильтра товаров.
+     */
+    public function actionFilter()
+    {
+    	$params=Product::model()->getFilterRequestParams('filter');
+    	$dataProvider=Product::model()->visibled()->filter('filter', [
+    		['Product', 'filterDefaultHandler']
+    	])->getDataProvider([
+    		'pagination'=>[
+                'pageSize' => Yii::app()->request->getQuery('size', 12),
+                'pageVar'=>'p',
+    			'params'=>$params
+            ],
+            'sort'=>[
+                'sortVar'=>'s', 
+                'descTag'=>'d',
+            	'params'=>$params
+            ]
+    	]);
+    	
+    	if(\Yii::app()->request->isAjaxRequest) {
+    		$this->renderPartial('filter', compact('dataProvider'), false, true);
+    	}
+    	else {
+    		$this->breadcrumbs->add($this->getHomeTitle(), '/shop');
+    		$this->breadcrumbs->add('Новинки и спецпредложения');
+    		$this->render('filter', compact('dataProvider'));
+    	}
+    }
+    
+4) Создать шаблон отображения результатов фильтрации
+...
+<? $this->widget('zii.widgets.CListView', [
+    'dataProvider'=>$dataProvider,
+    ...
+]); ?>

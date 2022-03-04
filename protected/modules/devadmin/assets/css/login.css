@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F7F7F7;
+    font: 14px Arial, sans-serif;
+}
+
+#wrapper {
+    background: #fff;
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    -moz-box-shadow: 0 0 10px #ccc;
+}
+
+/*div {
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -300px 0 0 -300px;
+}*/
+
+#main {
+    padding: 35px;
+}
+
+#logo {
+    background: url("../images/logo_dishman.png") 50% 0 no-repeat;
+    height: 20px;
+}
+#sitename {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+#line {
+    background: #ccc;
+    height: 1px;
+    width: 80px;
+    margin: 0 auto
+}
+#note {
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+}
+
+#logo, #sitename, #line, #note {
+    margin-bottom: 10px;
+}
+
+#login-form .row input[type=text],
+#login-form .row input[type=password] {
+    display: block;
+    width: 90%;
+    color: #666;
+    border: solid 1px #DBDBDB;
+    text-align: center;
+}
+#login-form input[type=submit] {
+    border: none;
+}
+#login-form .row.enter {
+    text-align: center;
+    padding-top: 10px;
+    margin: 0;
+}
+#login-form .errorMessage {
+    text-align: center;
+}
+

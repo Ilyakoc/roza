@@ -1,0 +1,4 @@
+//  bgImageTween, a Jquery plugin for smooth background image transition loops.
+//  Copyright (C) 2010  Toni Anzlovar, Distributed under GPL3 licence.
+(function(b){b.fn.bgImageTween=function(c,d,e){function f(){a.delay(d);a.animate({opacity:1},e);a.queue(function(){n=c.shift();c.push(n);a.parent().css("backgroundImage","url("+n+")");b(this).dequeue()});a.delay(d);a.animate({opacity:0},e);a.queue(function(){n=c.shift();c.push(n);a.css("backgroundImage","url("+n+")",f());b(this).dequeue()})}b(this).wrapInner('<div class="bgImageTweenfaderContent"></div>');var g=b(".bgImageTweenfaderContent",this);b(this).prepend('<div class="bgImageTweenfader"></div>');
+var a=b(".bgImageTweenfader",this);g.css("position","absolute");a.css("position","absolute");a.css("width",b(this).width());a.css("height",b(this).height());a.css("opacity",0);n=c.shift();c.push(n);b(this).css("backgroundImage","url("+n+")");n=c.shift();c.push(n);a.css("backgroundImage","url("+n+")");f()}})(jQuery);

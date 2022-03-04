@@ -1,0 +1,22 @@
+#logo {
+    background: url(../images/d/logo.png) 50% 50% no-repeat;
+}
+.default-button span {
+    background: url("../images/bicons.png") no-repeat;
+    padding-left: 25px;
+    line-height: 17px;
+    height: 16px;
+}
+.create-b span {
+    background-position: 0 0;
+}
+.settings-b span {
+    background-position: 0 -17px;
+}
+.logout-b span {
+    background-position: 0 -34px;
+}
+.delete-b span {
+    background: none;
+    padding: 0;
+}

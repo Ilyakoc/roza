@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<?php CmsHtml::head(); ?> 
+Yii::app()->clientScript->registerCoreScript('cookie');  
+?>
+<?php CmsHtml::js($this->template.'/js/scripts.js'); ?>
+<?php CmsHtml::js($this->template.'/js/jquery.bxslider.min.js'); ?>
+<?php CmsHtml::js($this->template.'/js/jquery.fancybox.pack.js'); ?>
+<?php CmsHtml::js($this->template.'/js/jquery.maskedinput-1.3.min.js'); ?>
+<?php CmsHtml::js($this->template.'/js/common.js'); ?>
+<script type="text/javascript">
+ 
+$(function() {
+    $(window).scroll(function() {
+    if($(this).scrollTop() != 0) {
+        $('#totop').fadeIn();
+    } else {
+        $('#totop').fadeOut();
+    }
+});
+    
+$('#totop').click(function() {
+    $('body,html').animate({scrollTop:0},800);
+    });
+});
+
+</script>
+</head>
+
+<body <?php if($this->id=='site' && $this->action->id == 'index') echo 'class="index-page"'; ?>>
+    <div id="head">
+        <div class="wrapper">
+            <div class="header">
+                <div id="logo" class="left">
+                    <a href="/"><img src="<?php echo $this->template; ?>/images/logo.png" alt="<?php echo CHtml::encode(ModuleHelper::getParam('sitename', true)); ?>" /></a>
+                </div>
+                <div id="slogan" class="left">
+                    <?php ModuleHelper::getParam('slogan'); ?>
+                </div>
+                <div id="phone" class="right">
+                    <p><?php ModuleHelper::getParam('phone_code'); ?> <strong><?php ModuleHelper::getParam('phone'); ?></strong></p>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </div>   
+    <div class="menu-wrp">
+        <div class="wrapper">
+            <div id="menu" >
+                <?php $this->widget('zii.widgets.CMenu', array(
+                    'items'=>$this->menu,
+                    'htmlOptions'=>array('class'=>'menu clearfix'),
+                )); ?>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </div>
+
+    <div style="position: relative;">
+        <?php $this->widget('widget.ShopCart.ShopCart'); ?>
+    </div>
+
+    <?php if($this->id=='site' && $this->action->id == 'index'): ?>
+    <div id="info_img">     
+        <div class="slides">
+           <?php $this->widget('widget.SiteSlider.SiteSlider', array('type'=>2)); ?>
+        </div>
+        <div>
+            <a href="javascript:;" class="control prev"></a>
+            <a href="javascript:;" class="control next"></a>
+       </div>
+    </div>
+    <?php endif; ?>
+
+        <div class="wrapper">
+            <div id="main" class="clearfix">
+                <?php echo $content; ?>
+            </div>
+        </div>
+
+    <div class="footer-wrp">
+        <div id="footer" class="wrapper">
+            <div class="main-pad">
+                <div id="name" class="left"><?php ModuleHelper::Copyright(); ?></div>
+                <div id="address" class="left"><?php ModuleHelper::getParam('address'); ?></div>
+                <div class="social left">
+                    <a class="vk" href="http://vk.com/bazacvetov"></a>
+                    <a class="fb" href="https://www.facebook.com/profile.php?id=100004840214693"></a>
+                    <span>- Мы в соц. сетях</span>
+                </div>
+                <div id="made" class="right">Создание сайтов — <a href="http://kontur-lite.ru" title="Создание сайтов в Новосибирске"><img src="/images/made.png" alt="Kontur-lite.ru" /></a></div>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </div>
+
+    <?php ModuleHelper::getParam('counter'); ?>
+    <div id="totop" > ^ Наверх </div>
+</body>
+</html>

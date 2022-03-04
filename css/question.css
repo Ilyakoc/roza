@@ -1,0 +1,47 @@
+/* Questions */
+#question-form-div {
+    width: 350px;
+    padding: 10px;
+}
+#question-form-div h2 {
+    color: #333;
+}
+
+#add-question {
+    background: #EFEFEF;
+    float: right;
+    padding: 9px 12px;
+    font-size: 11px;
+}
+#add-question a {
+    cursor: pointer;
+    border-bottom: dotted 1px #069;
+}
+
+.question-list {}
+.question-list .item {
+    margin-bottom: 20px;
+}
+.question-list .username {
+    display: block;
+    color: #999;
+    font-size: 11px;
+}
+.question-list .question {
+    border-bottom: dotted 1px #069;
+    cursor: pointer;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+.question-list .answer {
+    /*background: url(../images/question_item.png) 0 17px no-repeat;*/
+    display: none;
+    padding: 10px 0 0 20px;
+}
+.question-list .answer.show {
+    display: block;
+}
+
+#question-form .row label {
+    color: #333;
+}

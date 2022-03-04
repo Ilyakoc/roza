@@ -1,0 +1,311 @@
+/* buttons */
+.default-button {
+    background: url(../images/alert-overlay.png) repeat-x #eee;
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+    border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+    box-shadow: 0 1px 3px #999;	-moz-box-shadow: 0 1px 3px #999; -webkit-box-shadow: 0 1px 3px #999;
+	text-shadow: 1px 1px 1px #fff;
+    border-bottom: 1px solid #ccc;
+	position: relative;
+	cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 14px 9px;
+}
+.default-button.left {
+    margin-right: 10px;
+}
+.default-button.right {
+    margin-left: 10px;
+}
+.default-button:hover  {
+    background-color: #dbdbdb;
+}
+.default-button:active	{
+    top: 1px;
+}
+.default-button span {
+    display: block;
+    height: 16px;
+    padding-left: 25px;
+    line-height: 17px;
+    background: url("../images/bicons.png") no-repeat;
+}
+.default-button.create-b span {
+}
+.default-button.settings-b span {
+    background-position: 0 -17px;
+}
+.default-button.logout-b span {
+    background-position: 0 -34px;
+    padding-left: 16px;
+}
+
+input.default-button {
+    border: none;
+}
+
+.with-default-button {
+    padding: 9px 0;
+}
+
+/* forms */
+.adminList {
+    width:100%;
+    border-collapse: collapse;
+}
+
+.adminList thead {
+    background:#ECECEC;
+}
+.adminList th {
+    text-transform:uppercase;
+    text-align:left;
+}
+.adminList th,
+.adminList td {
+    padding: 5px 10px;
+    font-size:12px;
+    color: #999;
+}
+
+.adminList .row1 {
+    background: #fcfcfc;
+}
+
+.adminList .row0 {
+    background: #efefef;
+}
+
+.mceEditor {
+}
+div.form .row textarea.small {
+    height: 200px;
+}
+div.form .row textarea.big {
+    height: 400px;
+}
+
+div.form .row.buttons a {margin-left:10px}
+div.form .row .title {
+    width: 400px;
+}
+div.form .row {margin: 5px 0 15px;}
+div.form .row.buttons {margin-top: 20px}
+div.form .row label
+{
+    font-weight: bold;
+	font-size: 0.9em;
+	display: block;
+    margin-bottom:5px;
+}
+
+div.form span.required {color:#fc0000}
+div.form .note
+{
+	font-style: italic;
+    margin-bottom:15px;
+}
+
+div.form div.error label,
+div.form label.error,
+div.form span.error
+{
+	color: #C00;
+}
+
+div.form div.error input,
+div.form div.error textarea,
+div.form div.error select,
+div.form input.error,
+div.form textarea.error,
+div.form select.error
+{
+	background: #FEE;
+	border-color: #C00;
+}
+
+div.form div.success input,
+div.form div.success textarea,
+div.form div.success select,
+div.form input.success,
+div.form textarea.success,
+div.form select.success
+{
+	background: #E6EFC2;
+	border: solid 1px #C6D880;
+}
+
+div.form .errorSummary
+{
+	border: 2px solid #C00;
+	padding: 7px 7px 12px 7px;
+	margin: 0 0 20px 0;
+	background: #FEE;
+	font-size: 0.9em;
+}
+
+div.form .errorMessage
+{
+	color: red;
+	font-size: 0.9em;
+    padding: 10px 0
+}
+
+div.form .errorSummary p
+{
+	margin: 0;
+	padding: 5px;
+}
+
+div.form .errorSummary ul
+{
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+
+div.form .row.buttons input[type=button] {
+    padding: 2px;
+}
+
+div.form .row input[type=text],
+div.form .row input[type=password]{
+    font-size: 18px;
+    padding: 7px 10px;
+    border: solid 1px #999;
+    display: block;
+    width: 50%;
+}
+
+div.form .row input[type=file] {
+    margin-bottom: 5px;
+}
+
+div.form .row textarea {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+}
+div.form .row input.inline,
+div.form .row label.inline {
+    display: inline;
+}
+
+div.form .row .ufile {font-size:12px}
+div.form .row .ufile input[type=file] {
+    display: inline;
+    margin-right:10px;
+}
+
+div.form .row input.w10 { width: 10%; margin-right: 5px; }
+div.form .row input.w35 { width: 35%; }
+
+div.form .hidden {
+    display: none;
+}
+
+div.form .row.spoller label {
+    border-bottom: dashed 1px #000;
+    display: inline-block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+div.form .row select {
+    padding: 5px;
+    font-size: 18px;
+}
+div.form .row select option {
+    padding: 0 5px;
+}
+
+/* UploadImages */
+.uploadedImages {
+    list-style: none;
+}
+.uploadedImages li {
+    float: left;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 25%;
+}
+.uploadedImages img {
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+.uploadedImages li a.insert {
+    visibility: hidden;
+    display: block;
+}
+.uploadedImages li.show-insert a.insert {
+    visibility: visible;
+}
+/*UploadFiles*/
+
+/* uploadForm */
+.uploadForm {
+    margin-bottom: 10px;
+}
+.uploadForm .add {
+    margin-left: 5px;
+}
+.uploadedList {
+    list-style: none;
+}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#000; cursor:wait;}
+/* Container */
+#simplemodal-container {height:auto; width: auto; color:#666; background-color:#FFF; padding:12px;}
+#simplemodal-container .simplemodal-data {/*padding:8px;*/}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container a {color:#000;}
+#simplemodal-container a.modalCloseImg {background:url(../images/close-modal.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+#simplemodal-container h3 {color:#84b8d9;}
+
+.simplemodal-data .row {
+    margin-bottom: 10px;
+}
+
+/*Text*/
+#content h1 {
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.content h2,
+.content h3,
+.content h4,
+.content p {
+    margin:  0 0 0.5em;
+}
+
+.content ol {
+    padding-left: 1.6em;
+}
+.content li {
+    margin-bottom: 0.5em;
+    /*margin-left: 1em;*/
+}
+
+.remove-icon {
+    display: block;
+    background: url(../images/image_del.png) no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.loader {
+    display: inline-block;
+    background: url(../images/ajax-loader.gif) no-repeat 50% 50%;
+    width: 16px;
+    height: 11px;
+}
+/*div.form span.success {
+    color: green;
+}*/
+/* Spollers */
+

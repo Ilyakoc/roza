@@ -1,0 +1,14 @@
+<?php $this->beginContent('//layouts/main'); ?>
+<div class="left-side">
+	<div id="events" class="module">
+        <?php $this->widget('widget.ShopCategories.ShopCategories'); ?>
+    </div>
+</div>
+
+<div class="right-side-other">
+    <div id="content" class="content">
+        <?php echo $content; ?>
+        <div class="clr"></div>
+    </div>
+</div>
+<?php $this->endContent(); ?>

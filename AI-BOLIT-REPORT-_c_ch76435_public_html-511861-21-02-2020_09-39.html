@@ -1,0 +1,557 @@
+<html>
+<head>
+<!-- revisium.com/ai/ -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
+<title>Отчет по /home/c/ch76435/public_html</title>
+<style type="text/css" title="currentStyle">
+    @import "https://cdn.revisium.com/ai/media/css/demo_page2.css";
+    @import "https://cdn.revisium.com/ai/media/css/jquery.dataTables2.css";
+</style>
+
+<script type="text/javascript" language="javascript" src="https://cdn.revisium.com/ai/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.revisium.com/ai/datatables.min.js"></script>
+
+<style type="text/css">
+ body 
+ {
+   font-family: Tahoma, sans-serif;
+   color: #5a5a5a;
+   background: #FFFFFF;
+   font-size: 14px;
+   margin: 20px;
+   padding: 0;
+ }
+
+.header
+ {
+   font-size: 34px;
+   margin: 0 0 10px 0;
+ }
+
+ .hidd
+ {
+    display: none;
+ }
+ 
+ .ok
+ {
+    color: green;
+ }
+ 
+ .line_no
+ {
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+
+   background: #DAF2C1;
+   padding: 2px 5px 2px 5px;
+   margin: 0 5px 0 5px;
+ }
+ 
+ .credits_header 
+ {
+  -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+
+   background: #F2F2F2;
+   padding: 10px;
+   font-size: 11px;
+    margin: 0 0 10px 0;
+ }
+ 
+ .marker
+ {
+    color: #FF0090;
+    font-weight: 100;
+    background: #FF0090;
+    padding: 2px 0 2px 0;
+    width: 2px;
+ }
+ 
+ .title
+ {
+   font-size: 24px;
+   margin: 20px 0 10px 0;
+   color: #9CA9D1;
+}
+
+.summary 
+{
+  float: left;
+  width: 500px;
+}
+
+.summary TD
+{
+  font-size: 12px;
+  border-bottom: 1px solid #F0F0F0;
+  font-weight: 700;
+  padding: 10px 0 10px 0;
+}
+ 
+.crit, .vir
+{
+  color: #D84B55;
+}
+
+.intitem
+{
+  color:#4a6975;
+}
+
+.spacer
+{
+   margin: 0 0 50px 0;
+   clear:both;
+}
+
+.warn
+{
+  color: #F6B700;
+}
+
+.clear
+{
+   clear: both;
+}
+
+.offer
+{
+  -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+
+   width: 500px;
+   background: #F2F2F2;
+   color: #747474;
+   font-family: Helvetica, Arial, sans-serif;
+   padding: 30px;
+   margin: 20px 0 0 550px;
+   font-size: 14px;
+}
+
+.offer2
+{
+  -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+
+   width: 500px;
+   background: #f6f5e0;
+   color: #747474;
+   font-family: Helvetica, Arial, sans-serif;
+   padding: 30px;
+   margin: 20px 0 0 550px;
+   font-size: 14px;
+}
+
+
+HR {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  opacity: .2;
+}
+ 
+.flist
+{
+   font-family: Henvetica, Arial, sans-serif;
+}
+
+.flist TD
+{
+   font-size: 11px;
+   padding: 5px;
+}
+
+.flist TH
+{
+   font-size: 12px;
+   height: 30px;
+   padding: 5px;
+   background: #CEE9EF;
+}
+
+
+.it
+{
+   font-size: 14px;
+   font-weight: 100;
+   margin-top: 10px;
+}
+
+.crit .it A {
+   color: #E50931; 
+   line-height: 25px;
+   text-decoration: none;
+}
+
+.warn .it A {
+   color: #F2C900; 
+   line-height: 25px;
+   text-decoration: none;
+}
+
+
+
+.details
+{
+   font-family: Calibri, sans-serif;
+   font-size: 12px;
+   margin: 10px 10px 10px 0;
+}
+
+.crit .details
+{
+   color: #A08080;
+}
+
+.warn .details
+{
+   color: #808080;
+}
+
+.details A
+{
+  color: #FFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 2px;
+  background: #E5CEDE;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+}
+
+.details A:hover
+{
+   background: #A0909B;
+}
+
+.ctd
+{
+   margin: 10px 0 10px 0;
+   align:center;
+}
+
+.ctd A 
+{
+   color: #0D9922;
+}
+
+.disclaimer
+{
+   color: darkgreen;
+   margin: 10px 10px 10px 0;
+}
+
+.note_vir
+{
+   margin: 10px 0 10px 0;
+   //padding: 10px;
+   color: #FF4F4F;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+  
+}
+
+.note_warn
+{
+   margin: 10px 0 10px 0;
+   color: #F6B700;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+}
+
+.note_int
+{
+   margin: 10px 0 10px 0;
+   color: #60b5d6;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+}
+
+.updateinfo
+{
+  color: #FFF;
+  text-decoration: none;
+  background: #E5CEDE;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 10px 0 10px 0;   
+  padding: 10px;
+}
+
+
+.caution
+{
+  color: #EF7B75;
+  text-decoration: none;
+  margin: 20px 0 0 0;   
+  font-size: 12px;
+}
+
+.footer
+{
+  color: #303030;
+  text-decoration: none;
+  background: #F4F4F4;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 80px 0 10px 0px;   
+  padding: 10px;
+}
+
+.rep
+{
+  color: #303030;
+  text-decoration: none;
+  background: #94DDDB;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 10px 0 10px 0;   
+  padding: 10px;
+  font-size: 12px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">Отчет сканера <a href="https://revisium.com/ai/">AI-Bolit</a> v4.4.2: /home/c/ch76435/public_html/ (1/0)</div>
+<div class="credits_header">Сканер бесплатный только для личного некоммерческого использования. Информация по <a href="https://revisium.com/ai/faq.php#faq11" target=_blank>коммерческой лицензии</a> (пункт №11). <a href="https://revisium.com/images/mini_aibolit.jpg">Авторское свидетельство</a> о гос. регистрации в РосПатенте №2012619254 от 12 октября 2012 г.</div>
+<div class="details_header">
+   Затрачено времени: <b>1 m 14 s</b>. Сканирование начато 21-02-2020 в 09:39:56, сканирование завершено 21-02-2020 в 09:41:10<br/>
+   Всего проверено 1005 директорий и 4703 файлов. Использовано памяти при сканировании: 8.70 Mb.
+ </div>
+
+ 
+ 
+ <div class="summary">
+<div class="title">Сводный отчет</div><table cellspacing=0 border=0><tr><td class="crit" width=400>Вредоносных скриптов</td><td class="crit">10</td></tr><tr><td class="warn" width=400>Пропущенных больших файлов</td><td class="warn">7</td></tr></table><!--[json]{"redirect":0,"critical_php":10,"critical_js":0,"phishing":0,"unix_exec":0,"iframes":0,"not_read":0,"base64":0,"heuristics":0,"symlinks":0,"big_files_skipped":7,"suspicious":0}[/json]--><div class=details style="margin: 20px 20px 20px 0">Обращаем внимание, что обнаруженные файлы не всегда являются вирусами и хакерскими скриптами. Сканер минимизирует число ложных обнаружений, но это не всегда возможно, так как найденный фрагмент может встречаться как во вредоносных скриптах, так и в обычных.<p>Для диагностического сканирования без ложных срабатываний мы разработали специальную версию <u><a href="https://revisium.com/ru/blog/ai-bolit-4-ISP.html" target=_blank style="background: none; color: #303030">сканера для хостинг-компаний</a></u>.</div>
+
+ </div>
+ 
+ <div class="offer">
+    <div>
+     <div class="crit" style="font-size: 17px; margin-bottom: 20px"><b>Внимание! Наш сканер обнаружил подозрительный или вредоносный код</b>.</div> 
+     <p>Возможно, ваш сайт был взломан. Рекомендуем срочно <a href="https://revisium.com/ru/order/#fform" target=_blank>проконсультироваться со специалистами</a> по данному отчету.</p>
+     <p><hr size=1></p>
+     <p>Рекомендуем также проверить сайт бесплатным <b><a href="https://rescan.pro/?utm=aibolit" target=_blank>онлайн-сканером ReScan.Pro</a></b>.</p>
+     <p><hr size=1></p>
+         <div class="caution">Не оставляйте файл отчета на сервере, и не давайте на него прямых ссылок с других сайтов. Информация из отчета может быть использована злоумышленниками для взлома сайта, так как содержит информацию о настройках сервера, файлах и каталогах.</div>
+    </div>
+ </div>
+
+ <div class="offer2">
+       <b>Наши продукты:</b><br/>
+              <ul>
+               <li style="margin-top: 10px"><font color=red><sup>[new]</sup></font><b><a href="https://revisium.com/ru/products/antivirus_for_ispmanager/" target=_blank>Антивирус для ISPmanager Lite</a></b> &mdash;  сканирование и лечение сайтов прямо в панели хостинга</li>
+               <li style="margin-top: 10px"><b><a href="https://revisium.com/ru/blog/revisium-antivirus-for-plesk.html" target=_blank>Антивирус для Plesk</a> Onyx 17.x</b> &mdash;  сканирование и лечение сайтов прямо в панели хостинга</li>
+               <li style="margin-top: 10px"><b><a href="https://cloudscan.pro/ru/" target=_blank>Облачный антивирус CloudScan.Pro</a> для веб-специалистов</b> &mdash; лечение сайтов в один клик</li>
+               <li style="margin-top: 10px"><b><a href="https://revisium.com/ru/antivirus-server/" target=_blank>Антивирус для сервера</a></b> &mdash; для хостинг-компаний, веб-студий и агентств.</li>
+              </ul>  
+    </div>
+ </div> 
+ 
+ <div class="clear"></div>
+ 
+ <div class="title">Критические замечания</div><div class="note_vir">Эти файлы могут быть вредоносными или хакерскими скриптами (10)</div><div class="crit"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_crit"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_big_1"><td><div class="it"><a class="it">/home/c/ch76435/public_html/ai-bolit.php</a></div><div class="details"><a href="#" onclick="return hsig('id_big_1')">[x]</a> BIG FILE. SKIPPED.</div></td><td align=center><div class="ctd">21/02/2020 08:29:45</div></td><td align=center><div class="ctd">21/02/2020 08:29:45</div></td><td align=center><div class="ctd">830.19 Kb</div></td><td class="hidd"><div class="hidd">0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1582262985</div></td><td class="hidd"><div class="hidd">id_big_1</div></td></tr><tr class="tbg1" o="id_1d2a5806"><td><div class="it"><a class="it">/home/c/ch76435/public_html/protected/components/HHash.php</a></div><div class="details"><a href="#" onclick="return hsig('id_1d2a5806')">[x]</a> <span class="line_no">1</span>…{// create Squares for($j=0;$j&lt;$dimension;$j++){ $s1[$i][$j]=$basea[$i*$dimension+$j]; $s2[$i][$j]=<span class="marker">&nbsp;</span>str_rot13($basea[($dimension*$dimension-1) -($i*$dimension+$j)]); } } unset($basea); $m=floor(strlen($i</div></td><td align=center><div class="ctd">20/02/2020 14:00:54</div></td><td align=center><div class="ctd">06/02/2018 07:28:16</div></td><td align=center><div class="ctd">8.43 Kb</div></td><td class="hidd"><div class="hidd">efce80bac0283e2f4e22aaa1c72013b202aa779c</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1517891296</div></td><td class="hidd"><div class="hidd">id_1d2a5806</div></td></tr><tr class="tbg0" o="id_1d2a5806"><td><div class="it"><a class="it">/home/c/ch76435/public_html/protected/components/helpers/HHash.php</a></div><div class="details"><a href="#" onclick="return hsig('id_1d2a5806')">[x]</a> <span class="line_no">1</span>…++){// create Squares for($j=0;$j&lt;$dimension;$j++){ $s1[$i][$j]=$basea[$i*$dimension+$j]; $s2[$i][$j]=<span class="marker">&nbsp;</span>str_rot13($basea[($dimension*$dimension-1) -($i*$dimension+$j)]); } } unset($basea); $m=floor(strlen($input</div></td><td align=center><div class="ctd">20/02/2020 14:00:54</div></td><td align=center><div class="ctd">06/02/2017 16:17:54</div></td><td align=center><div class="ctd">7.06 Kb</div></td><td class="hidd"><div class="hidd">26ea77789a9b9131e8b872777f4525c3d38f019c</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1486387074</div></td><td class="hidd"><div class="hidd">id_1d2a5806</div></td></tr><tr class="tbg1" o="id_1d2a5806"><td><div class="it"><a class="it">/home/c/ch76435/public_html/protected/modules/common/components/helpers/HHash.php</a></div><div class="details"><a href="#" onclick="return hsig('id_1d2a5806')">[x]</a> <span class="line_no">1</span>…{// create Squares for($j=0;$j&lt;$dimension;$j++){ $s1[$i][$j]=$basea[$i*$dimension+$j]; $s2[$i][$j]=<span class="marker">&nbsp;</span>str_rot13($basea[($dimension*$dimension-1) -($i*$dimension+$j)]); } } unset($basea); $m=floor(strlen($i</div></td><td align=center><div class="ctd">20/02/2020 14:00:54</div></td><td align=center><div class="ctd">04/04/2017 04:14:03</div></td><td align=center><div class="ctd">8.43 Kb</div></td><td class="hidd"><div class="hidd">233eb60c11b4b2e9fccc979f4feaf0f193852020</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1491268443</div></td><td class="hidd"><div class="hidd">id_1d2a5806</div></td></tr><tr class="tbg0" o="id_big_1"><td><div class="it"><a class="it">/home/c/ch76435/public_html/.git/objects/bc/b0a7cbdeb85daa108271a26f309b58f6c8b8ea</a></div><div class="details"><a href="#" onclick="return hsig('id_big_1')">[x]</a> BIG FILE. SKIPPED.</div></td><td align=center><div class="ctd">20/02/2020 14:00:54</div></td><td align=center><div class="ctd">31/01/2020 13:41:14</div></td><td align=center><div class="ctd">710.62 Kb</div></td><td class="hidd"><div class="hidd">0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1580467274</div></td><td class="hidd"><div class="hidd">id_big_1</div></td></tr><tr class="tbg1" o="id_big_1"><td><div class="it"><a class="it">/home/c/ch76435/public_html/.git/objects/73/632092bb77864f6c840e1c5d4c34dc0d32303e</a></div><div class="details"><a href="#" onclick="return hsig('id_big_1')">[x]</a> BIG FILE. SKIPPED.</div></td><td align=center><div class="ctd">20/02/2020 14:00:54</div></td><td align=center><div class="ctd">31/01/2020 13:41:15</div></td><td align=center><div class="ctd">6.80 Mb</div></td><td class="hidd"><div class="hidd">0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1580467275</div></td><td class="hidd"><div class="hidd">id_big_1</div></td></tr><tr class="tbg0" o="id_big_1"><td><div class="it"><a class="it">/home/c/ch76435/public_html/.git/objects/57/dab9b0095db986bd232b4f5f5780b1957eece1</a></div><div class="details"><a href="#" onclick="return hsig('id_big_1')">[x]</a> BIG FILE. SKIPPED.</div></td><td align=center><div class="ctd">21/02/2020 07:43:27</div></td><td align=center><div class="ctd">21/02/2020 07:43:27</div></td><td align=center><div class="ctd">8.90 Mb</div></td><td class="hidd"><div class="hidd">0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1582260207</div></td><td class="hidd"><div class="hidd">id_big_1</div></td></tr><tr class="tbg1" o="id_big_1"><td><div class="it"><a class="it">/home/c/ch76435/public_html/.git/objects/33/52b414a881d65eac14d3f40963d96303765162</a></div><div class="details"><a href="#" onclick="return hsig('id_big_1')">[x]</a> BIG FILE. SKIPPED.</div></td><td align=center><div class="ctd">20/02/2020 14:00:54</div></td><td align=center><div class="ctd">31/01/2020 13:41:15</div></td><td align=center><div class="ctd">14.16 Mb</div></td><td class="hidd"><div class="hidd">0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1580467275</div></td><td class="hidd"><div class="hidd">id_big_1</div></td></tr><tr class="tbg0" o="id_big_1"><td><div class="it"><a class="it">/home/c/ch76435/public_html/.git/objects/64/73cdba65988e678395746a9863c4748b78fa9d</a></div><div class="details"><a href="#" onclick="return hsig('id_big_1')">[x]</a> BIG FILE. SKIPPED.</div></td><td align=center><div class="ctd">20/02/2020 14:00:54</div></td><td align=center><div class="ctd">31/01/2020 13:41:15</div></td><td align=center><div class="ctd">10.74 Mb</div></td><td class="hidd"><div class="hidd">0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1580467275</div></td><td class="hidd"><div class="hidd">id_big_1</div></td></tr><tr class="tbg1" o="id_big_1"><td><div class="it"><a class="it">/home/c/ch76435/public_html/.git/objects/dc/a3888bd86445b292f8062a552321e01f11a3f6</a></div><div class="details"><a href="#" onclick="return hsig('id_big_1')">[x]</a> BIG FILE. SKIPPED.</div></td><td align=center><div class="ctd">20/02/2020 14:00:54</div></td><td align=center><div class="ctd">02/10/2019 11:45:47</div></td><td align=center><div class="ctd">905.83 Kb</div></td><td class="hidd"><div class="hidd">0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1570005947</div></td><td class="hidd"><div class="hidd">id_big_1</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+<div style="margin-top: 20px" class="title">Предупреждения</div><div class="note_warn">Большие файлы (больше чем 650.00 Kb). Пропущено</div><div class="warn"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_8600526"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_z1767317"><td><div class="it"><a class="it">/home/c/ch76435/public_html/ai-bolit.php</a></div></td><td align=center><div class="ctd">21/02/2020 08:29:45</div></td><td align=center><div class="ctd">21/02/2020 08:29:45</div></td><td align=center><div class="ctd">830.19 Kb</div></td><td class="hidd"><div class="hidd">0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1582262985</div></td><td class="hidd"><div class="hidd">id_z1767317</div></td></tr><tr class="tbg1" o="id_z8041724"><td><div class="it"><a class="it">/home/c/ch76435/public_html/.git/objects/bc/b0a7cbdeb85daa108271a26f309b58f6c8b8ea</a></div></td><td align=center><div class="ctd">20/02/2020 14:00:54</div></td><td align=center><div class="ctd">31/01/2020 13:41:14</div></td><td align=center><div class="ctd">710.62 Kb</div></td><td class="hidd"><div class="hidd">0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1580467274</div></td><td class="hidd"><div class="hidd">id_z8041724</div></td></tr><tr class="tbg0" o="id_z1726261"><td><div class="it"><a class="it">/home/c/ch76435/public_html/.git/objects/73/632092bb77864f6c840e1c5d4c34dc0d32303e</a></div></td><td align=center><div class="ctd">20/02/2020 14:00:54</div></td><td align=center><div class="ctd">31/01/2020 13:41:15</div></td><td align=center><div class="ctd">6.80 Mb</div></td><td class="hidd"><div class="hidd">0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1580467275</div></td><td class="hidd"><div class="hidd">id_z1726261</div></td></tr><tr class="tbg1" o="id_z7453039"><td><div class="it"><a class="it">/home/c/ch76435/public_html/.git/objects/57/dab9b0095db986bd232b4f5f5780b1957eece1</a></div></td><td align=center><div class="ctd">21/02/2020 07:43:27</div></td><td align=center><div class="ctd">21/02/2020 07:43:27</div></td><td align=center><div class="ctd">8.90 Mb</div></td><td class="hidd"><div class="hidd">0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1582260207</div></td><td class="hidd"><div class="hidd">id_z7453039</div></td></tr><tr class="tbg0" o="id_z4246083"><td><div class="it"><a class="it">/home/c/ch76435/public_html/.git/objects/33/52b414a881d65eac14d3f40963d96303765162</a></div></td><td align=center><div class="ctd">20/02/2020 14:00:54</div></td><td align=center><div class="ctd">31/01/2020 13:41:15</div></td><td align=center><div class="ctd">14.16 Mb</div></td><td class="hidd"><div class="hidd">0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1580467275</div></td><td class="hidd"><div class="hidd">id_z4246083</div></td></tr><tr class="tbg1" o="id_z2993688"><td><div class="it"><a class="it">/home/c/ch76435/public_html/.git/objects/64/73cdba65988e678395746a9863c4748b78fa9d</a></div></td><td align=center><div class="ctd">20/02/2020 14:00:54</div></td><td align=center><div class="ctd">31/01/2020 13:41:15</div></td><td align=center><div class="ctd">10.74 Mb</div></td><td class="hidd"><div class="hidd">0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1580467275</div></td><td class="hidd"><div class="hidd">id_z2993688</div></td></tr><tr class="tbg0" o="id_z8154363"><td><div class="it"><a class="it">/home/c/ch76435/public_html/.git/objects/dc/a3888bd86445b292f8062a552321e01f11a3f6</a></div></td><td align=center><div class="ctd">20/02/2020 14:00:54</div></td><td align=center><div class="ctd">02/10/2019 11:45:47</div></td><td align=center><div class="ctd">905.83 Kb</div></td><td class="hidd"><div class="hidd">0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1570005947</div></td><td class="hidd"><div class="hidd">id_z8154363</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+ 
+    <div class="footer">
+       <div class="disclaimer"><span class="vir">[!]</span> Отказ от гарантий: невозможно гарантировать обнаружение всех вредоносных скриптов. Поэтому разработчик сканера не несет ответственности за возможные последствия работы сканера AI-Bolit или неоправданные ожидания пользователей относительно функциональности и возможностей.
+   </div>
+   <div class="thanx">
+      Замечания и предложения по работе скрипта, а также не обнаруженные вредоносные скрипты вы можете присылать на <a href="mailto:ai@revisium.com">ai@revisium.com</a>.<br/>
+      Также будем чрезвычайно благодарны за любые упоминания сканера AI-Bolit на вашем сайте, в блоге, среди друзей, знакомых и клиентов. <br/>Ссылку можно поставить на страницу <a href="https://revisium.com/ai/">https://revisium.com/ai/</a>.<br/> 
+     <p>Получить консультацию или задать вопросы можно по email <a href="mailto:ai@revisium.com">ai@revisium.com</a>.</p> 
+    </div>
+    </div>
+    
+<script language="javascript">
+
+function hsig(id) {
+  var divs = document.getElementsByTagName("tr");
+  for(var i = 0; i < divs.length; i++){
+     
+     if (divs[i].getAttribute('o') == id) {
+        divs[i].innerHTML = '';
+     }
+  }
+
+  return false;
+}
+
+
+$(document).ready(function(){
+    $('#table_crit').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+        "paging": true,
+       "iDisplayLength": 500,
+        "oLanguage": {
+            "sLengthMenu": "Отображать по _MENU_ записей",
+            "sZeroRecords": "Ничего не найдено",
+            "sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+            "sInfoEmpty": "Нет файлов",
+            "sInfoFiltered": "(всего записей _MAX_)",
+            "sSearch":       "Поиск:",
+            "sUrl":          "",
+            "oPaginate": {
+                "sFirst": "Первая",
+                "sPrevious": "Предыдущая",
+                "sNext": "Следующая",
+                "sLast": "Последняя"
+            },
+            "oAria": {
+                "sSortAscending": ": активировать для сортировки столбца по возрастанию",
+                "sSortDescending": ": активировать для сортировки столбцов по убыванию"   
+            }
+        }
+
+     } );
+
+});
+
+$(document).ready(function(){
+    $('#table_vir').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+        "paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+       "iDisplayLength": 500,
+        "oLanguage": {
+            "sLengthMenu": "Отображать по _MENU_ записей",
+            "sZeroRecords": "Ничего не найдено",
+            "sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+            "sInfoEmpty": "Нет файлов",
+            "sInfoFiltered": "(всего записей _MAX_)",
+            "sSearch":       "Поиск:",
+            "sUrl":          "",
+            "oPaginate": {
+                "sFirst": "Первая",
+                "sPrevious": "Предыдущая",
+                "sNext": "Следующая",
+                "sLast": "Последняя"
+            },
+            "oAria": {
+                "sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+                "sSortDescending": ": активировать для сортировки столбцов по убыванию"   
+            }
+        },
+
+     } );
+
+});
+
+if ($('#table_warn0')) {
+    $('#table_warn0').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+        "paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+                     "iDisplayLength": 500,
+                    "oLanguage": {
+                        "sLengthMenu": "Отображать по _MENU_ записей",
+                        "sZeroRecords": "Ничего не найдено",
+                        "sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+                        "sInfoEmpty": "Нет файлов",
+                        "sInfoFiltered": "(всего записей _MAX_)",
+                        "sSearch":       "Поиск:",
+                        "sUrl":          "",
+                        "oPaginate": {
+                            "sFirst": "Первая",
+                            "sPrevious": "Предыдущая",
+                            "sNext": "Следующая",
+                            "sLast": "Последняя"
+                        },
+                        "oAria": {
+                            "sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+                            "sSortDescending": ": активировать для сортировки столбцов по убыванию"   
+                        }
+        }
+
+     } );
+}
+
+if ($('#table_warn1')) {
+    $('#table_warn1').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+        "paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+                     "iDisplayLength": 500,
+                    "oLanguage": {
+                        "sLengthMenu": "Отображать по _MENU_ записей",
+                        "sZeroRecords": "Ничего не найдено",
+                        "sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+                        "sInfoEmpty": "Нет файлов",
+                        "sInfoFiltered": "(всего записей _MAX_)",
+                        "sSearch":       "Поиск:",
+                        "sUrl":          "",
+                        "oPaginate": {
+                            "sFirst": "Первая",
+                            "sPrevious": "Предыдущая",
+                            "sNext": "Следующая",
+                            "sLast": "Последняя"
+                        },
+                        "oAria": {
+                            "sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+                            "sSortDescending": ": активировать для сортировки столбцов по убыванию"   
+                        }
+        }
+
+     } );
+}
+
+
+</script>
+<!-- [][]  -->
+ </body>
+</html>

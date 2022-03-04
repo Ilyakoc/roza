@@ -1,0 +1,58 @@
+<?php $this->beginContent('//layouts/main'); ?>
+
+<div class="left-side">
+	<div id="events" class="module">ddd
+        <?php $this->widget('widget.ShopCategories.ShopCategories'); ?>sss
+    </div>
+</div>
+
+<div class="center-side">
+    <div id="content" class="content">
+        <?php echo $content; ?>
+        <div class="clr"></div>
+    </div>
+</div>
+
+<div class="right-side">
+	<h1>Наименование раздела</h1>
+	<ul class="popular">
+		<li>
+			<a href="javascript:;">
+				<img src="<?php echo $this->template; ?>/images/top-1.jpg">
+				<p>Корзина</p>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="<?php echo $this->template; ?>/images/top-2.jpg">
+				<p>Гербер</p>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="<?php echo $this->template; ?>/images/top-3.jpg">
+				<p>Хризантемма</p>
+			</a> 
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="<?php echo $this->template; ?>/images/top-4.jpg">
+				<p>Розы</p>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="<?php echo $this->template; ?>/images/top-5.jpg">
+				<p>Круглые букеты</p>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="<?php echo $this->template; ?>/images/top-6.jpg">
+				<p>Вертикальные</p>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<?php $this->endContent(); ?>

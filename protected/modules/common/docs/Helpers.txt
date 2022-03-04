@@ -1,0 +1,17 @@
+Полезные советы
+
+use common\components\helpers\HYii as Y;
+
+Публикация скрипта из ресурсов модулей, которые унаследованы от \common\components\base\WebModule
+Y::module('common')->publishJs('js/kontur/common/tools/form2object.js');
+
+------------------------------------------------------------------------------------------------
+Использование механизма i18n
+Кнопки:
+use common\components\helpers\HYii as Y;
+
+$tbtn=Y::ct('CommonModule.btn', 'common');
+<?=$tbtn('create')?>
+
+------------------------------------------------------------------------------------------------
+
